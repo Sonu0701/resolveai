@@ -1,8 +1,10 @@
 services:
   resolveai:
     build: .
-    ports: ["8501:8501"]
-    env_file: [.env]
+    ports:
+      - "8501:10000"
+    env_file:
+      - .env
     volumes:
       - ./storage:/app/storage
       - ./chroma_db:/app/chroma_db
