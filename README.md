@@ -152,7 +152,7 @@ resolveai/
 ├── storage/.gitkeep
 ├── tests/
 ├── requirements.txt
-├── .env.example
+├── .env
 ├── .gitignore
 ├── Dockerfile
 ├── docker-compose.yml
@@ -195,7 +195,7 @@ The first embedding-model run downloads `BAAI/bge-small-en-v1.5`; allow network 
 
 ```bash
 cp .env.example .env
-p install -r requirements.txt
+pip install -r requirements.txt
 ``````
 
 | Variable | Required | Description |
